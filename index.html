@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 11 Math - Measures of Dispersion Quiz</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+  }
+  .quiz-container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  .question {
+    margin-bottom: 20px;
+    background: #f5f7ff;
+    padding: 15px;
+    border-left: 6px solid #6C63FF;
+    border-radius: 8px;
+  }
+  .options label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  .options label:hover {
+    background: #6C63FF;
+    color: #fff;
+  }
+  input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #6C63FF;
+  }
+  button {
+    margin: 10px 5px 0 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #6C63FF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #574fd6;
+  }
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  .close {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .close:hover {
+    background: #d93636;
+  }
+</style>
+</head>
+<body>
+<h1>Class 11 Math - Measures of Dispersion Quiz</h1>
+<div class="quiz-container">
+<!-- Questions -->
+<div class="question">
+  <p>1. The range of a data set is defined as:</p>
+  <div class="options">
+    <label><input type="radio" name="q1" value="A"> Difference between highest and lowest values</label>
+    <label><input type="radio" name="q1" value="B"> Average of all values</label>
+    <label><input type="radio" name="q1" value="C"> Square root of variance</label>
+    <label><input type="radio" name="q1" value="D"> Sum of deviations</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>2. Variance is defined as:</p>
+  <div class="options">
+    <label><input type="radio" name="q2" value="A"> Mean of the data set</label>
+    <label><input type="radio" name="q2" value="B"> Square of standard deviation</label>
+    <label><input type="radio" name="q2" value="C"> Range divided by 2</label>
+    <label><input type="radio" name="q2" value="D"> Sum of all values</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>3. Standard deviation is the:</p>
+  <div class="options">
+    <label><input type="radio" name="q3" value="A"> Average deviation from mean</label>
+    <label><input type="radio" name="q3" value="B"> Square root of variance</label>
+    <label><input type="radio" name="q3" value="C"> Difference between highest and lowest value</label>
+    <label><input type="radio" name="q3" value="D"> Sum of squares of data</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>4. Mean deviation from mean is always:</p>
+  <div class="options">
+    <label><input type="radio" name="q4" value="A"> Negative</label>
+    <label><input type="radio" name="q4" value="B"> Zero</label>
+    <label><input type="radio" name="q4" value="C"> Positive</label>
+    <label><input type="radio" name="q4" value="D"> Cannot be determined</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>5. Coefficient of variation is used to:</p>
+  <div class="options">
+    <label><input type="radio" name="q5" value="A"> Compare variability of two data sets</label>
+    <label><input type="radio" name="q5" value="B"> Measure central tendency</label>
+    <label><input type="radio" name="q5" value="C"> Determine median</label>
+    <label><input type="radio" name="q5" value="D"> Find mode</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>6. If all values of a data set are equal, the standard deviation is:</p>
+  <div class="options">
+    <label><input type="radio" name="q6" value="A"> Zero</label>
+    <label><input type="radio" name="q6" value="B"> One</label>
+    <label><input type="radio" name="q6" value="C"> Infinity</label>
+    <label><input type="radio" name="q6" value="D"> Cannot be determined</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>7. The sum of deviations of data from mean is always:</p>
+  <div class="options">
+    <label><input type="radio" name="q7" value="A"> Zero</label>
+    <label><input type="radio" name="q7" value="B"> Positive</label>
+    <label><input type="radio" name="q7" value="C"> Negative</label>
+    <label><input type="radio" name="q7" value="D"> Equal to sum of values</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>8. The range is affected by:</p>
+  <div class="options">
+    <label><input type="radio" name="q8" value="A"> All observations</label>
+    <label><input type="radio" name="q8" value="B"> Only extreme values</label>
+    <label><input type="radio" name="q8" value="C"> Median value</label>
+    <label><input type="radio" name="q8" value="D"> Mean value</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>9. Quartile deviation is half of:</p>
+  <div class="options">
+    <label><input type="radio" name="q9" value="A"> Range</label>
+    <label><input type="radio" name="q9" value="B"> Interquartile range</label>
+    <label><input type="radio" name="q9" value="C"> Standard deviation</label>
+    <label><input type="radio" name="q9" value="D"> Mean deviation</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>10. Mean deviation from median is generally:</p>
+  <div class="options">
+    <label><input type="radio" name="q10" value="A"> Greater than mean deviation from mean</label>
+    <label><input type="radio" name="q10" value="B"> Less than mean deviation from mean</label>
+    <label><input type="radio" name="q10" value="C"> Equal to variance</label>
+    <label><input type="radio" name="q10" value="D"> Zero</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>11. Variance can never be:</p>
+  <div class="options">
+    <label><input type="radio" name="q11" value="A"> Negative</label>
+    <label><input type="radio" name="q11" value="B"> Zero</label>
+    <label><input type="radio" name="q11" value="C"> Positive</label>
+    <label><input type="radio" name="q11" value="D"> Infinity</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>12. Standard deviation is expressed in:</p>
+  <div class="options">
+    <label><input type="radio" name="q12" value="A"> Same units as data</label>
+    <label><input type="radio" name="q12" value="B"> Square units of data</label>
+    <label><input type="radio" name="q12" value="C"> Unitless</label>
+    <label><input type="radio" name="q12" value="D"> Twice the units of data</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>13. Chebyshev's theorem gives minimum proportion of observations within:</p>
+  <div class="options">
+    <label><input type="radio" name="q13" value="A"> 1 standard deviation</label>
+    <label><input type="radio" name="q13" value="B"> k standard deviations from mean</label>
+    <label><input type="radio" name="q13" value="C"> Median</label>
+    <label><input type="radio" name="q13" value="D"> Range</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>14. Measures of dispersion are used to:</p>
+  <div class="options">
+    <label><input type="radio" name="q14" value="A"> Represent central tendency</label>
+    <label><input type="radio" name="q14" value="B"> Represent spread or variability</label>
+    <label><input type="radio" name="q14" value="C"> Find mode</label>
+    <label><input type="radio" name="q14" value="D"> Find median</label>
+  </div>
+</div>
+
+<div class="question">
+  <p>15. The range, variance, and standard deviation are:</p>
+  <div class="options">
+    <label><input type="radio" name="q15" value="A"> Measures of central tendency</label>
+    <label><input type="radio" name="q15" value="B"> Measures of correlation</label>
+    <label><input type="radio" name="q15" value="C"> Measures of dispersion</label>
+    <label><input type="radio" name="q15" value="D"> Measures of skewness</label>
+  </div>
+</div>
+
+<button onclick="submitQuiz()">Submit Answers</button>
+<button onclick="resetQuiz()">Reset Quiz</button>
+</div>
+
+<!-- Modal for results -->
+<div class="modal" id="resultModal">
+  <div class="modal-content">
+    <h2>Quiz Result</h2>
+    <p id="scoreText"></p>
+    <p id="gradeText"></p>
+    <button class="close" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script>
+const answers = {
+  q1:"A", q2:"B", q3:"B", q4:"C", q5:"A",
+  q6:"A", q7:"A", q8:"B", q9:"B", q10:"A",
+  q11:"A", q12:"A", q13:"B", q14:"B", q15:"C"
+};
+
+function submitQuiz() {
+  let score = 0;
+  for(let q in answers){
+    const selected = document.querySelector(`input[name="${q}"]:checked`);
+    if(selected && selected.value === answers[q]){
+      score++;
+    }
+  }
+  let grade = "";
+  if(score >= 13) grade="A+";
+  else if(score >= 10) grade="A";
+  else if(score >= 7) grade="B";
+  else if(score >= 5) grade="C";
+  else grade="D";
+  document.getElementById("scoreText").innerText = `Score: ${score}/15`;
+  document.getElementById("gradeText").innerText = `Grade: ${grade}`;
+  document.getElementById("resultModal").style.display = "flex";
+}
+
+function resetQuiz(){
+  document.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false);
+}
+
+function closeModal(){
+  document.getElementById("resultModal").style.display = "none";
+}
+</script>
+</body>
+</html>
